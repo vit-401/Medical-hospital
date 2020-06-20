@@ -1,0 +1,402 @@
+@import 'vars';
+@import 'fonts';
+@import 'global';
+
+// start header
+.header {
+  margin-bottom: 30px;
+}
+
+.header__top,
+.header__down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header__down {
+  position: relative;
+}
+
+.header__top {
+  min-height: 107px;
+  border-bottom: 2px solid #c2c2c2;
+}
+
+.header__down {
+  margin-top: 34px;
+}
+
+.header__logo {
+  img {
+    max-width: 210px;
+    min-height: 42px;
+  }
+}
+
+.header__data-contacts {
+  display: flex;
+  justify-content: space-between;
+
+  *+* {
+    margin-left: 53px;
+  }
+}
+
+.work-wraper {
+  position: relative;
+}
+
+.data__title {
+  margin-bottom: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #6a6a6a;
+}
+
+.data__text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #6a6a6a;
+
+  a {
+    color: #6a6a6a;
+  }
+}
+
+.data-icon {
+  top: -5px;
+  width: 100%;
+  max-width: 52px;
+  min-height: 52px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: $btn;
+  margin-right: 20px;
+  position: absolute;
+  left: -10px;
+
+  &::before {
+    font-family: 'icomoon';
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+}
+
+.call-icon::before {
+  font-size: 40px;
+}
+
+.mail-icon::before {
+  font-size: 23px;
+}
+
+.work-icon::before {
+  font-size: 30px;
+}
+
+.menu {
+  a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #474747;
+  }
+
+  li {
+    display: inline-block;
+
+    &+li {
+      margin-left: 26px;
+    }
+  }
+}
+
+.social__link {
+  &:before {
+    font-size: 23px;
+  }
+
+  &+.social__link {
+    margin-left: 25px;
+  }
+}
+
+li.header-social__links,
+li.header__data-contacts {
+  display: none;
+}
+
+.header-social__links {
+  .social__link {
+    color: #000;
+  }
+}
+
+.btn__menu {
+  background-image: url(../images/icons/open-menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  max-width: 60px;
+  min-height: 40px;
+  width: 100%;
+  cursor: pointer;
+  transition: all .3s;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  margin-bottom: 40px;
+  display: none;
+  z-index: 3;
+
+  &.btn__active {
+    background-image: url(../images/icons/close.svg);
+  }
+}
+
+// end header
+// start footer
+.footer {
+  min-height: 628px;
+  background-color: #171717;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.footer__title {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 68px;
+  margin-top: 107px;
+}
+
+.footer__item {
+  color: #8D8D8D;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  a {
+    color: #8D8D8D;
+  }
+}
+
+.mail__link {
+  &+& {
+    margin-top: 5px;
+  }
+}
+
+.footer__phone {
+  margin: 55px 0;
+
+  a {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+.footer__box1 {
+  max-width: 306px;
+}
+
+.footer__contacts {
+  position: relative;
+
+  img {
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+}
+
+.footer__info {
+  margin-left: 90px;
+}
+
+.footer__link {
+  padding-left: 20px;
+  position: relative;
+
+  &+& {
+    margin-top: 25px;
+  }
+
+  &::before {
+    content: "\f0da";
+    font-family: 'icomoon';
+    font-size: 19px;
+    left: 0;
+    top: -1px;
+    position: absolute;
+    color: $btn;
+  }
+}
+
+.footer__form {
+  * {
+    display: block;
+  }
+
+  input {
+    margin: 5px 0 25px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #5F5F5F;
+    color: #fff;
+    padding: 0 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  textarea {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    border-bottom: 1px solid #5f5f5f;
+    outline: none;
+    color: #fff;
+    padding: 0 3px;
+    margin-bottom: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    padding-bottom: 20px;
+  }
+
+  button {
+    background-color: $btn;
+    border-radius: 22px;
+    box-shadow: -3.508px 11.476px 40px 0px rgba(0, 1, 1, 0.2);
+    max-width: 125px;
+    min-height: 35px;
+    padding: 0 32px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+}
+
+.footer-social__links {
+  .social__link {
+    text-align-last: left;
+    color: #fff;
+    margin-bottom: 110px;
+  }
+}
+
+.author {
+  background-color: #1A1A1A;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: #5F5F5F;
+  padding: 40px 0;
+
+  a {
+    color: #5F5F5F;
+  }
+}
+
+
+// end footer
+// start baner
+.slick-dots li button{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: #646464;
+}
+.slick-dots li.slick-active button{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: #0CBFDE;
+  
+}
+.slick-dots li button:before{
+display: none;
+}
+.slick-dotted.slick-slider{
+  margin-bottom: 0;
+}
+.baner__item {
+  background-image: url(../images/content/baner-1.jpg);
+  background-position-y: 76%;
+  background-position-x: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // height: 100%;
+  max-width: 100%;
+  min-height: 700px;
+  position: relative;
+}
+
+.baner__content {
+  position: absolute;
+  top: 180px;
+  left: 250px;
+  max-width: 578px;
+  box-shadow: 0 0 81px 154px rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  text-align: center;
+
+}
+
+.baner__item-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  color: #474747;
+  margin-bottom: 35px;
+}
+
+.baner__item-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 44px;
+}
+
+.baner__item-link {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  padding: 16px 25px;
+  background-color: $btn;
+  border-radius: 28px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.slick-dots{
+  bottom: 15px;
+}
+// end baner
+
+@import 'media';

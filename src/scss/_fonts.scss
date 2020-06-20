@@ -1,0 +1,94 @@
+@import 'local-fonts';
+
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?i5xfnc');
+  src: url('../fonts/icomoon.eot?i5xfnc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff2?i5xfnc') format('woff2'),
+    url('../fonts/icomoon.woff?i5xfnc') format('woff'),
+    url('../fonts/icomoon.svg?i5xfnc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope-o:before {
+  content: "\f003";
+}
+
+.icon-clock-o:before {
+  content: "\f017";
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+
+.icon-caret-right:before {
+  content: "\f0da";
+}
+
+.icon-mobile:before {
+  content: "\f10b";
+}
+
+.icon-mobile-phone:before {
+  content: "\f10b";
+}
+
+.icon-youtube:before {
+  content: "\f167";
+}
+
+.icon-vk:before {
+  content: "\f189";
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+.icon-cross:before {
+  content: "\ea0f";
+}
+
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+
+
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+// Light 300
+// Regular 400
+// Medium 500
+// Semi-bold 600
+// bold 700
